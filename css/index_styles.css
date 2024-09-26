@@ -115,7 +115,7 @@ html {
 }
 
 .home-title h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 5px;
     font-weight: bold;
 }
@@ -192,7 +192,7 @@ html {
 }
 
 .about-section-container p {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-top: 22px;
     color: white;
     text-align: justify;
@@ -201,10 +201,10 @@ html {
 .button {
     display: inline-block;
     margin-top: 30px;
-    padding: 5px 20px;
+    padding: 1rem 2rem;
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.25rem;
     background-color: #0000006a;
     border-bottom: 1px solid #d3ff11f3;
     transition: background-color 0.3s, border-color 0.3s;
@@ -226,6 +226,7 @@ html {
 /* Smooth scroll effect */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* Selected work container styling */
@@ -378,13 +379,15 @@ html {
 
 .services-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin-top: 50px;
 }
 
 .service-box {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 250px;
     display: flex;
     justify-content: center;
@@ -514,40 +517,35 @@ footer {
 }
 /* About me page Title Styling */
 
-@media (min-width: 1200px) {
-    .photo-container img {
-        width: 350px;
-        height: 350px;
-    }
-}
-
-@media (max-width: 1199px) and (min-width: 768px) {
-    .photo-container img {
-        width: 250px;
-        height: 250px;
-    }
+/* For very small devices (like small phones) */
+@media (max-width: 575px) {
     .home-title h1 {
-        font-size: 30px;
+        font-size: 1.5rem;
+    }
+    .home-title h3 {
+        font-size: 1.125rem;
+    }
+    .photo-container img {
+        width: 150px;
+        height: 150px;
     }
 }
 
-@media (max-width: 767px) {
+/* For tablets */
+@media (min-width: 576px) and (max-width: 768px) {
     .photo-container img {
         width: 200px;
         height: 200px;
     }
-    .home-title h1 {
-        font-size: 25px;
-    }
-    .home-title h3 {
-        font-size: 18px;
-    }
-    .about-section-container {
-        padding: 20px;
-    }
-    .selected-work-title h1 {
-        font-size: 40px;
+}
+
+/* For larger phones */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .photo-container img {
+        width: 250px;
+        height: 250px;
     }
 }
+
 
  
