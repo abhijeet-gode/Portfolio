@@ -12,9 +12,13 @@ body {
     padding: 0;
 }
 
+html {
+    font-size: 100%;
+}
+
 .menu-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
 .footer-nav {
@@ -24,9 +28,10 @@ body {
 .footer-nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
 }
 
 .footer-nav a:hover {
@@ -39,7 +44,7 @@ body {
 .home-container {
     position: relative;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 12%;
     margin: 0 auto;
 }
 
@@ -51,11 +56,13 @@ body {
 
 .photo-container img {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     border-radius: 50%;
     margin-top: -80px;
     border: 5px solid #d3ff11f3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
@@ -506,3 +513,41 @@ footer {
     }    
 }
 /* About me page Title Styling */
+
+@media (min-width: 1200px) {
+    .photo-container img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .photo-container img {
+        width: 250px;
+        height: 250px;
+    }
+    .home-title h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .photo-container img {
+        width: 200px;
+        height: 200px;
+    }
+    .home-title h1 {
+        font-size: 25px;
+    }
+    .home-title h3 {
+        font-size: 18px;
+    }
+    .about-section-container {
+        padding: 20px;
+    }
+    .selected-work-title h1 {
+        font-size: 40px;
+    }
+}
+
+ 
