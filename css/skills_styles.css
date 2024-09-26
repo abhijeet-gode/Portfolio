@@ -1,0 +1,75 @@
+/* Skills Title Styling */
+.skills-title {
+    text-align: center;
+    background: linear-gradient(to right, white 50%, #d3ff11f3 50%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 32px;
+    margin-bottom: -150px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.skills-description {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 20px 0; /* Adjusts the spacing around the text */
+    line-height: 1.8; /* Makes the text more readable */
+    padding: 0 30%; /* Adjusts left and right padding for width */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 40px; /* Rounded corners */
+    padding: 30px 30px; /* Padding inside the box */
+}
+
+.skill-name {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.skill-name:hover {
+    color: #d3ff11f3;
+    text-decoration-color: #d3ff11f3;
+}
+
+/* Skill Entry Styling */
+.skill-entry {
+    display: flex;
+    justify-content: center; /* Center the skill entries */
+    align-items: center;
+    margin: 0 20px; /* Adjust margin as needed */
+    margin-top: 20px;
+}
+
+.skill-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -150px;
+    padding: 20px; /* Space inside the box */
+    background-color: #0000006a; /* Semi-transparent background */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: transform 0.8s ease; /* Add hover effect for scale */
+    
+    width: auto; /* Set desired width */
+    height: 20%; /* Set desired height */
+}
+
+.skill-slide:hover {
+    transform: scale(1.2);
+}
+
+.skill-slide img {
+    width: 100px; /* Set desired width */
+    height: 100px; /* Set desired height */
+    filter: grayscale(100%); /* Black and white by default */
+    transition: filter 0.8s ease;
+}
+
+.skill-slide:hover img {
+    filter: grayscale(0%); /* Turn to color on hover */
+}

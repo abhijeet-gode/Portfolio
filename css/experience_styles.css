@@ -1,0 +1,81 @@
+#professional-experience-section {
+    text-align: center;
+    margin-top: 50px 0;
+}
+
+#professional-experience-section h1.my, #professional-experience-section h1.experience {
+    font-size: 80px;
+    color: #d3ff11f3;
+    letter-spacing: 10px;
+}
+
+.experience-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 60px;
+    background-color: #0000006a;
+    border-radius: 40px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.621);
+    animation: fade-in 0.8s ease-in-out;
+}
+
+.experience-entry img.company-logo {
+    width: 150px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.experience-details {
+    text-align: left;
+}
+
+.experience-details h2 {
+    color: #c8c6c6;
+    text-align: left;
+    margin: 5;
+}
+
+.experience-details h3 {
+    color: #d3ff11f3;
+    text-align: left;
+    margin: 5;
+}
+
+.experience-details p {
+    color: #6f6d6d;
+    font-size: 14px;
+}
+
+.experience-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-details ul li {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #c8c6c6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.experience-details ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #d3ff11f3;
+    font-size: 20px;
+}
+
+/* AOS animation effects */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
